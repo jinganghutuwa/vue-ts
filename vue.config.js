@@ -20,6 +20,7 @@ module.exports = {
       errors: true
     }
   },
+  
 //   是否使用包含运行时编译器的Vue内核版本
 // runtimeCompiler: true,
 
