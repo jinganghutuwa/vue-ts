@@ -71,7 +71,8 @@ export default class App extends Vue {
     age:24
   }
   
-
+  
+  
   beforeRouteEnter (to:any, from:any, next:any) {
     console.log('beforeRouteEnter')
     next() // needs to be called to confirm the navigation
