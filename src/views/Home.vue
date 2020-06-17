@@ -3,7 +3,7 @@
  * @Date: 2019-11-08 14:16:45
  * @version: 
  * @LastEditors: Jason
- * @LastEditTime: 2020-04-22 13:25:09
+ * @LastEditTime: 2020-06-17 21:57:20
  * @Descripttion: 
  -->
 <template>
@@ -91,11 +91,12 @@ export default class App extends Vue {
   @Action('setAirportInfo') MutationAirportInfo:any
   // @Mutation('TypeAirPortInfo') MutationAirportInfo:any
   created() {
-    // console.log(this.$attrs)
+    //! console.log(this.$attrs)
     this.MutationAirportInfo({ name:'Jason',age:23,city:'XZ' })
     setTimeout(() => {
       console.log(this.getterAirportInfo)
     }, 3000);
+    console.log("process.env.BASE_URL",process.env.BASE_URL);
     
   }
   changeName(val:string){

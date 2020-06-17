@@ -3,7 +3,7 @@
  * @Date: 2019-11-08 14:16:45
  * @version: 
  * @LastEditors: Jason
- * @LastEditTime: 2019-11-15 13:21:39
+ * @LastEditTime: 2020-06-17 22:01:50
  * @Descripttion: 
  -->
 <template>
@@ -38,6 +38,7 @@
     mounted () {
       this.greet()
       console.log(this.$route.query.name)
+      console.log("process.env.BASE_URL",process.env.BASE_URL);
     }
 
     // 计算属性

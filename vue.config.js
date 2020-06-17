@@ -3,13 +3,14 @@
  * @Date: 2019-09-23 09:52:30
  * @version: 
  * @LastEditors: Jason
- * @LastEditTime: 2020-04-22 13:45:42
+ * @LastEditTime: 2020-06-17 22:02:41
  * @Descripttion: 
  */
 let isProduction = process.env.NODE_ENV === 'production'
 let path = require("path")
+
 module.exports = {
-  publicPath: '/TSDEMO',
+  publicPath: "/tsD",
   // runtimeCompiler: true,
   devServer: {
     host: 'localhost',
